@@ -1,13 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Zen+Dots&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
 header {
-  background-color: #f8f9fa;
-  padding: 1em;
-  text-align: center;
+  background: rgb(46, 255, 179);
+  background: linear-gradient(90deg, rgb(46, 255, 179) 0%, rgb(27, 104, 230) 100%);
+  min-height: 7rem;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_logo-wrapper span {
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+  font-size: 2.75rem;
+}
+header .header_nav {
+  width: 50%;
+}
+header .header_nav ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+header .header_nav ul button {
+  padding: 1.25rem 1.9688rem;
+  border-radius: 21px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: transparent;
+  background-image: radial-gradient(circle at 100% 100%, transparent 18px, #2dfeb4 18px, #2dfeb4 23px, transparent 23px), linear-gradient(to right, #2dfeb4, #34b7fe), radial-gradient(circle at 0% 100%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to bottom, #34b7fe, #34b7fe), radial-gradient(circle at 0% 0%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to left, #34b7fe, #2fffb5), radial-gradient(circle at 100% 0%, transparent 18px, #2fffb5 18px, #2fffb5 23px, transparent 23px), linear-gradient(to top, #2fffb5, #2dfeb4);
+  background-size: 23px 23px, calc(100% - 46px) 5px, 23px 23px, 5px calc(100% - 46px);
+  background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
 }
 
 main {
   flex: 1;
-  padding: 1em;
-  background-color: #e9ecef;
+  display: flex;
 }
 
 footer {
@@ -17,21 +60,20 @@ footer {
   padding: 1em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper > * {
+  padding: 0 4.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
