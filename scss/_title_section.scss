@@ -1,0 +1,32 @@
+.title-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 21.5625rem;
+	width: 100%;
+	.text-wrapper{
+
+		display: flex;
+		flex-direction: column;
+		gap: 3.125rem;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		h2{
+			font-size: 2.5rem;
+			font-weight: 500;
+			background: #303A97;
+			background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		
+		}
+		p{
+			font-size: 1.625rem;
+			width: 724px;
+			font-weight: 400;
+			line-height: 2rem;
+		}
+	}
+}
