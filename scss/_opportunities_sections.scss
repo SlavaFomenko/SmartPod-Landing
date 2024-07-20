@@ -1,0 +1,170 @@
+.opportunities_sections{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+
+	.opportunities_sections_wrapper{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		.pot{
+			width: 100%;
+			display: flex;
+			justify-content: end;
+			.pot_image_wrapper{
+				position: relative;
+				transform: translate(27.5rem,-6.25rem);
+				img{
+					width: 100%;
+				}
+			}
+			.arrow_wrapper{
+				opacity: 0.5;
+				width: auto;
+				position: absolute;
+				transition: all 0.3s ease-in-out; 
+				.title{
+					position: absolute;
+					bottom: 2rem;
+					// background-color: white;
+					span{
+						font-size: 2.5rem;
+						background: #303A97;
+						background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						font-weight: 500;
+						// border: 5px solid white;
+					}
+				}
+			}
+			.first{
+				transform: translate(-6.25rem,8.125rem);
+
+				
+			}
+			.second{
+				.title{
+					width: 500px;
+				}
+				transform: translate(-17.5rem,26.875rem);
+			}
+			.arrow_wrapper:hover{
+				opacity: 1;
+			}
+		}
+		@media screen and (max-width:1350px){
+			.opportunities_sections{
+				margin-top: 6.25rem;
+			}
+			.pot{
+				.first{
+					transform: translate(12.5rem,8.125rem);
+				}
+				.second{
+					.title{
+						width: 31.25rem;
+					}
+					transform: translate(5rem,26.875rem);
+				}
+			}
+			.arrow_wrapper {
+				img{
+					width: 70%;
+				}
+			}
+		}
+		.mobile-app{
+			width: 100%;
+			display: flex;
+			justify-content: start;
+			.mobile-app_image_wrapper{
+				position: relative;
+				transform: translate(-5.9375rem,-25rem);
+				img{
+					width: 100%;
+				}
+			}
+			.arrow_wrapper{
+				opacity: 0.5;
+				width: auto;
+				position: absolute;
+				transition: all 0.3s ease-in-out; 
+				.title{
+					position: absolute;
+					display: flex;
+					justify-content: end;
+					align-items: end;
+					bottom: 2rem;
+					right: -1rem;
+					span{
+						font-size: 2.5rem;
+						background: #303A97;
+						background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						font-weight: 500;
+					}
+				}
+				.image_wrapper{
+					transform: scaleX(-1);
+				}
+			}
+			.first{
+				transform: translate(4.25rem,-8.125rem);
+				.title{
+					width: 500px;
+				}
+			}
+			.second{
+				transform: translate(13.5rem,10.875rem);
+			}
+			.arrow_wrapper:hover{
+				opacity: 1;
+			}
+		}
+		@media screen and (max-width:1350px){
+			.pot{
+
+				.arrow_wrapper {
+					opacity: 1;
+				}
+			}
+			.mobile-app{
+				.mobile-app_image_wrapper{
+					position: relative;
+					transform: translate(-15.625rem,-12.5rem);
+					img{
+						width: 100%;
+					}
+				}
+				.first{
+					.title{
+						width: 300px;
+					}
+					transform: translate(-15.625rem,6.25rem);
+				}
+				
+				.arrow_wrapper {
+					opacity: 1;
+					img{
+						width: 70%;
+					}
+				}
+				.second{
+					.title{
+						width:250px;
+						margin-right: 40px;
+					}
+					transform: translate(-11.25rem,26.875rem);
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width:1350px){
+	.opportunities_sections{
+		margin-top: 6.25rem;
+	}
+}
