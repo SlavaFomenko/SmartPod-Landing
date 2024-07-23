@@ -600,6 +600,46 @@ header .header_nav ul button {
   }
 }
 
+.skils-section {
+  width: 100%;
+}
+.skils-section .skils-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.skils-section .skils-wrapper .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+  margin-top: 3.75rem;
+}
+.skils-section .skils-wrapper .content .title {
+  width: 90%;
+  text-align: center;
+}
+.skils-section .skils-wrapper .content .title h2 {
+  text-wrap: wrap;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background: #303A97;
+  background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skils-section .skils-wrapper .content .image-wrapper {
+  width: 90%;
+}
+.skils-section .skils-wrapper .content .image-wrapper img {
+  width: 100%;
+}
+
 main {
   flex: 1 0 auto;
   display: flex;
