@@ -1,0 +1,91 @@
+.market-and-opportunities_section{
+	margin-top:2.6667rem;
+	width: 100%;
+	.market-and-opportunities_wrapper{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		.content{
+			margin-top: 4.375rem;
+			width: 100%;
+			display: flex;
+			// align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			position: relative;
+			.title{
+				width: 70%;
+				text-align: center;
+				margin: 0 auto;
+				h3{
+					// width: min-content;
+					text-wrap: wrap;
+					font-size: 2.5rem;
+					font-weight: 500;
+					background: #303A97;
+					background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+			.image-wrapper{
+				margin: 0 auto;
+				width: 90%;
+				img{
+					width: 100%;
+				}
+			}
+			.text-container-wrapper{
+				// width: 90%;
+				.text-container{
+					width: 90%;
+					margin-top: 20%;
+					margin-left: 0%;
+					margin: 0 auto;
+					display: flex;
+					flex-direction: column;
+					height: min-content;
+					transform: translate(-30px,-150px);
+					// position: absolute;
+					.text{
+						position: absolute;
+						// left:-16%;
+						bottom: 40px;
+						h3{
+							// margin-left: 150px;
+							font-size: 2rem;
+							font-weight: 500;
+							background: #303A97;
+							background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;
+							margin-bottom: 20px;
+						} 
+						p{
+							font-size: 26px;
+						}
+					}
+
+					.arrow{
+						width: auto;
+						position: relative;
+						overflow: visible;
+						bottom: 0;
+						.image-wrapper{
+							left: 0;
+							width: 100%;
+							img{
+								width: 100%;
+							}
+						}
+					}
+				}
+				@media screen and (max-width:1300px) {
+					.text-container{
+						transform: translate(-30px,-100px);
+					}
+				}
+			}
+		}
+	}
+}

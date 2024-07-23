@@ -3,12 +3,15 @@
 @import "opportunities_section";
 @import "how-it-works_section";
 @import "advantages_section";
+@import "market-and-opportunities_section";
 
 main {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   height: auto;
+  overflow: hidden;
+  max-width: 100vw;
 }
 .section-title{
 	display: flex;
@@ -35,7 +38,7 @@ main {
 	h2{
     width: min-content;
     text-wrap: nowrap;
-		font-size: 2.5rem;
+		font-size: 2.75rem;
 		font-weight: 500;
 		background: #303A97;
 		background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);

@@ -474,7 +474,7 @@ header .header_nav ul button {
 }
 .advantages_section .advantages_wrapper .advantages_content .text-block h3 {
   margin-left: 150px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   background: #303A97;
   background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
@@ -517,11 +517,96 @@ header .header_nav ul button {
   margin-bottom: 20px;
 }
 
+.market-and-opportunities_section {
+  margin-top: 2.6667rem;
+  width: 100%;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content {
+  margin-top: 4.375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .title {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .title h3 {
+  text-wrap: wrap;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background: #303A97;
+  background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .image-wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .image-wrapper img {
+  width: 100%;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container {
+  width: 90%;
+  margin-top: 20%;
+  margin-left: 0%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  transform: translate(-30px, -150px);
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container .text {
+  position: absolute;
+  bottom: 40px;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container .text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  background: #303A97;
+  background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container .text p {
+  font-size: 26px;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container .arrow {
+  width: auto;
+  position: relative;
+  overflow: visible;
+  bottom: 0;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container .arrow .image-wrapper {
+  left: 0;
+  width: 100%;
+}
+.market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container .arrow .image-wrapper img {
+  width: 100%;
+}
+@media screen and (max-width: 1300px) {
+  .market-and-opportunities_section .market-and-opportunities_wrapper .content .text-container-wrapper .text-container {
+    transform: translate(-30px, -100px);
+  }
+}
+
 main {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   height: auto;
+  overflow: hidden;
+  max-width: 100vw;
 }
 
 .section-title {
@@ -550,7 +635,7 @@ main {
 .section-title h2 {
   width: min-content;
   text-wrap: nowrap;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 500;
   background: #303A97;
   background: linear-gradient(to right, #303A97 0%, #20C2C2 100%);
@@ -564,6 +649,7 @@ footer {
   text-align: center;
   padding: 1em;
   height: 3rem;
+  margin-top: 400px;
 }
 
 html, body {
