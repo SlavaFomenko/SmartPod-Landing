@@ -1,0 +1,62 @@
+.investments-section{
+	width: 100%;
+	padding: 0;
+	height: auto;
+	
+	.investments-wrapper{
+		margin-top: 3.75rem;
+		height: auto;
+		position: relative;
+		width: calc(100% + (4.25rem * 2));
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: rgb(48,58,151);
+		background: linear-gradient(90deg, rgba(48,58,151,1) 0%, rgba(32,194,194,1) 100%);
+		// transform-origin:  ;
+		left: -4.25rem;
+		// background-size: 150vw;
+		padding:5.5rem 2.25rem;
+		gap: 5.5rem;
+
+		.text-container{
+			color: white;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			p{
+				font-size: 2.5rem;
+			}
+			
+			span{
+				font-size: 109px;
+				color: #88ffe9;
+			}
+		}
+		.text{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			p{
+				font-size: 3rem;
+				color: white;
+				text-align: center;
+			}
+			.dashed-line {
+				width: 20%;
+				height: 3px; 
+				border-top: 0;
+				background: repeating-linear-gradient(
+						to right,
+						white,
+						white 5px,
+						transparent 5px,
+						transparent 10px
+				);
+				margin-top: 20px;
+			}
+		}
+	}
+}

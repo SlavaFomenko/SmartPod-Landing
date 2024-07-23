@@ -600,10 +600,10 @@ header .header_nav ul button {
   }
 }
 
-.skils-section {
+.skills-section {
   width: 100%;
 }
-.skils-section .skils-wrapper {
+.skills-section .skills-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -611,7 +611,7 @@ header .header_nav ul button {
   align-items: center;
   height: auto;
 }
-.skils-section .skils-wrapper .content {
+.skills-section .skills-wrapper .content {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -620,11 +620,11 @@ header .header_nav ul button {
   gap: 3.75rem;
   margin-top: 3.75rem;
 }
-.skils-section .skils-wrapper .content .title {
+.skills-section .skills-wrapper .content .title {
   width: 90%;
   text-align: center;
 }
-.skils-section .skils-wrapper .content .title h2 {
+.skills-section .skills-wrapper .content .title h2 {
   text-wrap: wrap;
   font-size: 2.5rem;
   font-weight: 500;
@@ -633,11 +633,63 @@ header .header_nav ul button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.skils-section .skils-wrapper .content .image-wrapper {
+.skills-section .skills-wrapper .content .image-wrapper {
   width: 90%;
 }
-.skils-section .skils-wrapper .content .image-wrapper img {
+.skills-section .skills-wrapper .content .image-wrapper img {
   width: 100%;
+}
+
+.investments-section {
+  width: 100%;
+  padding: 0;
+  height: auto;
+}
+.investments-section .investments-wrapper {
+  margin-top: 3.75rem;
+  height: auto;
+  position: relative;
+  width: calc(100% + 8.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(48, 58, 151);
+  background: linear-gradient(90deg, rgb(48, 58, 151) 0%, rgb(32, 194, 194) 100%);
+  left: -4.25rem;
+  padding: 5.5rem 2.25rem;
+  gap: 5.5rem;
+}
+.investments-section .investments-wrapper .text-container {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.investments-section .investments-wrapper .text-container p {
+  font-size: 2.5rem;
+}
+.investments-section .investments-wrapper .text-container span {
+  font-size: 109px;
+  color: #88ffe9;
+}
+.investments-section .investments-wrapper .text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.investments-section .investments-wrapper .text p {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+.investments-section .investments-wrapper .text .dashed-line {
+  width: 20%;
+  height: 3px;
+  border-top: 0;
+  background: repeating-linear-gradient(to right, white, white 5px, transparent 5px, transparent 10px);
+  margin-top: 20px;
 }
 
 main {
