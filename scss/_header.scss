@@ -1,48 +1,173 @@
-header {
-  background: rgb(46,255,179);
-  background: linear-gradient(90deg, rgba(46,255,179,1) 0%, rgb(27, 104, 230) 100%);
 
-  // rgb(27, 104, 230)
+header {
+  background: linear-gradient(90deg, rgba(46,255,179,1) 0%, rgb(27, 104, 230) 100%);
   min-height: 7rem;
   min-width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header_logo-wrapper span {
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+  font-size: 2.75rem;
+}
+
+.header_nav {
+  width: 50%;
+}
+
+.header_nav ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.header_nav button {
+  padding: 1.25rem 1.9688rem;
+  border-radius: 21px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: transparent;
+  background-image: radial-gradient(circle at 100% 100%, transparent 18px, #2dfeb4 18px, #2dfeb4 23px, transparent 23px), linear-gradient(to right, #2dfeb4, #34b7fe), radial-gradient(circle at 0% 100%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to bottom, #34b7fe, #34b7fe), radial-gradient(circle at 0% 0%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to left, #34b7fe, #2fffb5), radial-gradient(circle at 100% 0%, transparent 18px, #2fffb5 18px, #2fffb5 23px, transparent 23px), linear-gradient(to top, #2fffb5, #2dfeb4);
+  background-size: 23px 23px, calc(100% - 46px) 5px, 23px 23px, 5px calc(100% - 46px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.header_nav button:hover {
+  background-image: none;
+  background: linear-gradient(90deg, rgba(46,255,179,1) 0%, rgba(61,197,255,1) 100%);
+}
+
+/* styles.css (продолжение) */
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  display: block;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.burger-menu {
+  z-index: 999;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #105DB7;
+  height: 50vh;
+  left:0;
 
 
-  .header_logo-wrapper{
-    span{
-      font-family: "Zen Dots", sans-serif;
-      color: white;
-      font-size: 2.75rem;
+  align-items: center;
+  justify-content: center;
+
+  #close-btn{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    img{
+      height: 50%;
     }
   }
-  .header_nav{
-    width: 50%;
-    ul{
-      display: flex;
-      align-items: center;
-      width: 100%;
-      justify-content: space-between;
-      // gap: 4.125rem;
-      color: white;
-      font-size: 1.5rem;
-      font-weight: 400;
-      button{
-        padding: 1.25rem 1.9688rem;
-        border-radius: 21px; ;
-        font-size: 1.5rem;
-        color: white;
-        border: none;
-        background-color: transparent;
-        background-image: radial-gradient(circle at 100% 100%, transparent 18px, #2dfeb4 18px, #2dfeb4 23px, transparent 23px), linear-gradient(to right, #2dfeb4, #34b7fe), radial-gradient(circle at 0% 100%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to bottom, #34b7fe, #34b7fe), radial-gradient(circle at 0% 0%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to left, #34b7fe, #2fffb5), radial-gradient(circle at 100% 0%, transparent 18px, #2fffb5 18px, #2fffb5 23px, transparent 23px), linear-gradient(to top, #2fffb5, #2dfeb4);
-        background-size: 23px 23px, calc(100% - 46px) 5px, 23px 23px, 5px calc(100% - 46px);
-        background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
-        background-repeat: no-repeat;
-      }
-    }
+  span{
+    text-align: center;
+    color:white;
+    font-size: 2.5rem;
+  }
+  nav{
+    width: 100%;
+    height: 100%;
   }
 }
 
+.burger-menu nav ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+.burger-menu nav ul li {
+  width: 100%;
+  // margin: 10px 0;
+  height: 100%;
+  padding: 17px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px dashed white;
+}
+.burger-menu nav ul li:last-child{
+  border:none;
+}
+
+.burger-menu nav ul li a,
+.burger-menu nav ul li button {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  background:transparent;
+  border: none;
+  color: white;
+
+}
+
+.burger-menu-active {
+    display: flex;
+}
+
+.burger-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media screen and (min-width: 1200px) {
+  .burger-icon {
+      display: none;
+  }
+  .header_nav {
+      display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header_nav {
+      display: none;
+  }
+  // .burger-menu {
+  //     display: block;
+  // }
+}
