@@ -45,6 +45,20 @@ footer {
       display: flex;
       gap: 3%;
       align-items: center;
+      .youtube{
+        img{
+          height: 90px;
+        }
+      }
+      img{
+        height: 100%;
+      }
+      .image-wrapper{
+        filter: grayscale(100%);
+      }
+      .image-wrapper:hover{
+        filter: grayscale(0);
+      }
     }
     a{
       color: white;

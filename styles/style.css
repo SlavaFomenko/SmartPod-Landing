@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Zen+Dots&display=swap");
 * {
   margin: 0;
@@ -40,26 +39,27 @@ header {
 }
 
 .header_nav button {
+  width: 254px;
+  height: 68px;
   padding: 1.25rem 1.9688rem;
+  text-wrap: nowrap;
   border-radius: 21px;
   font-size: 1.5rem;
   color: white;
   border: none;
   background-color: transparent;
-  background-image: radial-gradient(circle at 100% 100%, transparent 18px, #2dfeb4 18px, #2dfeb4 23px, transparent 23px), linear-gradient(to right, #2dfeb4, #34b7fe), radial-gradient(circle at 0% 100%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to bottom, #34b7fe, #34b7fe), radial-gradient(circle at 0% 0%, transparent 18px, #34b7fe 18px, #34b7fe 23px, transparent 23px), linear-gradient(to left, #34b7fe, #2fffb5), radial-gradient(circle at 100% 0%, transparent 18px, #2fffb5 18px, #2fffb5 23px, transparent 23px), linear-gradient(to top, #2fffb5, #2dfeb4);
-  background-size: 23px 23px, calc(100% - 46px) 5px, 23px 23px, 5px calc(100% - 46px);
-  background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+  background-image: url("../imgs/border-btn.svg");
+  background-size: 255px;
+  background-position: center;
   background-repeat: no-repeat;
-  transition: all 0.5s linear;
+  transition: background 0.1s linear;
   cursor: pointer;
 }
 
 .header_nav button:hover {
-  background-image: none;
-  background: linear-gradient(90deg, rgb(46, 255, 179) 0%, rgb(61, 197, 255) 100%);
+  background-image: url("../imgs/menu-btn-hover.svg");
 }
 
-/* styles.css (продолжение) */
 .burger-icon {
   display: flex;
   flex-direction: column;
@@ -86,8 +86,10 @@ header {
   background-color: #105DB7;
   height: 50vh;
   left: 0;
+  animation: animationClose 0.5s forwards;
   align-items: center;
   justify-content: center;
+  transition: height 0.5s linear;
 }
 .burger-menu #close-btn {
   background-color: transparent;
@@ -105,6 +107,33 @@ header {
 .burger-menu nav {
   width: 100%;
   height: 100%;
+}
+
+@keyframes animationOpen {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes animationClose {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+.burger-menu-active {
+  display: flex;
+  top: 0;
+  animation: animationOpen 0.5s forwards;
+}
+
+.burger-menu-closing {
+  animation: animationClose 0.5s forwards;
+  display: flex;
 }
 
 .burger-menu nav ul {
@@ -144,20 +173,8 @@ header {
   color: white;
 }
 
-.burger-menu-active {
-  display: flex;
-}
-
-.burger-icon.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger-icon.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-icon.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+.burger-icon.active {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -906,6 +923,18 @@ footer .social-networks .icons {
   display: flex;
   gap: 3%;
   align-items: center;
+}
+footer .social-networks .icons .youtube img {
+  height: 90px;
+}
+footer .social-networks .icons img {
+  height: 100%;
+}
+footer .social-networks .icons .image-wrapper {
+  filter: grayscale(100%);
+}
+footer .social-networks .icons .image-wrapper:hover {
+  filter: grayscale(0);
 }
 footer .social-networks a {
   color: white;
