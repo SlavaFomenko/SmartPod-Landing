@@ -1,7 +1,6 @@
 footer {
   padding-top: 4.375rem !important;
   height: 31.25rem;
-  // margin-top: 6.25rem;
   padding-bottom: 4.375rem !important;
   background: rgb(46,255,179);
   background: linear-gradient(90deg, rgba(46,255,179,1) 0%, rgba(61,197,255,1) 100%);
@@ -54,7 +53,9 @@ footer {
         height: 100%;
       }
       .image-wrapper{
+        cursor: pointer;
         filter: grayscale(100%);
+        transition: filter 0.2s ease-in-out;
       }
       .image-wrapper:hover{
         filter: grayscale(0);

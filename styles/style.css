@@ -931,7 +931,9 @@ footer .social-networks .icons img {
   height: 100%;
 }
 footer .social-networks .icons .image-wrapper {
+  cursor: pointer;
   filter: grayscale(100%);
+  transition: filter 0.2s ease-in-out;
 }
 footer .social-networks .icons .image-wrapper:hover {
   filter: grayscale(0);
