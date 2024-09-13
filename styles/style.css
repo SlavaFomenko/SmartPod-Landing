@@ -881,12 +881,33 @@ main {
 
 footer {
   padding-top: 4.375rem !important;
-  height: 31.25rem;
+  height: 35.25rem;
   padding-bottom: 4.375rem !important;
   background: rgb(46, 255, 179);
   background: linear-gradient(90deg, rgb(46, 255, 179) 0%, rgb(61, 197, 255) 100%);
+  padding: 0 !important;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo {
+  padding: 2rem;
+}
+footer .logo span {
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 3.75rem;
+}
+footer .content {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem 8.25rem;
   justify-content: space-between;
 }
 footer .contact-info {
@@ -894,13 +915,8 @@ footer .contact-info {
   flex-direction: column;
   justify-content: space-between;
 }
-footer .contact-info .logo span {
-  font-family: "Zen Dots", sans-serif;
-  color: white;
-  font-size: 2.75rem;
-}
 footer .contact-info .contacts {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -914,34 +930,40 @@ footer .contact-info .contacts .info {
 }
 footer .social-networks {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: end;
   width: 100%;
+  justify-content: end;
+  width: 50%;
 }
 footer .social-networks .icons {
+  width: max-content;
   display: flex;
-  gap: 3%;
+  gap: 5%;
   align-items: center;
-}
-footer .social-networks .icons .youtube img {
-  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 footer .social-networks .icons img {
   height: 100%;
-}
-footer .social-networks .icons .image-wrapper {
   cursor: pointer;
-  filter: grayscale(100%);
-  transition: filter 0.2s ease-in-out;
-}
-footer .social-networks .icons .image-wrapper:hover {
-  filter: grayscale(0);
 }
 footer .social-networks a {
   color: white;
   font-size: 1.5rem;
   text-decoration: underline;
+}
+footer .author {
+  padding: 3rem;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 1.25rem;
+}
+footer .author a {
+  color: white;
+  font-size: 1.5rem;
 }
 
 html, body {
